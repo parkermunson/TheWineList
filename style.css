@@ -1,0 +1,150 @@
+
+@font-face {
+    font-family: "Panama Regular";
+    src: url("https://db.onlinewebfonts.com/t/abf78524cb042ba43670abd33c4883d6.eot");
+    src: url("https://db.onlinewebfonts.com/t/abf78524cb042ba43670abd33c4883d6.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/abf78524cb042ba43670abd33c4883d6.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/abf78524cb042ba43670abd33c4883d6.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/abf78524cb042ba43670abd33c4883d6.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/abf78524cb042ba43670abd33c4883d6.svg#Panama Regular")format("svg");
+}
+
+
+@font-face {
+    font-family: "Panama Bold";
+    src: url("https://db.onlinewebfonts.com/t/bbeb9331ef496cb4404cdc5831514ebe.eot");
+    src: url("https://db.onlinewebfonts.com/t/bbeb9331ef496cb4404cdc5831514ebe.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/bbeb9331ef496cb4404cdc5831514ebe.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/bbeb9331ef496cb4404cdc5831514ebe.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/bbeb9331ef496cb4404cdc5831514ebe.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/bbeb9331ef496cb4404cdc5831514ebe.svg#Panama Bold")format("svg");
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Panama Regular';
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    background: #F6F2ED;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 100vh;
+    background: #F6F2ED;
+    padding: 10px;
+}
+
+.title {
+    color: #A54547;
+    font-size: 74px;
+    padding: 10px;
+}
+
+.description {
+    padding-left: 14px;
+}
+
+.wine-list {
+    width: calc(50% - 20px); /* Adjust width to 50% minus some margin */
+    max-width: 540px;
+    background: white;
+    margin: 20px; /* Add margin */
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.wine-list h2 {
+    color: #A54547;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 10px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #A54547;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url(images/checked.png);
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background: #edeef0;
+}
+
+
